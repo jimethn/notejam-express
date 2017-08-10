@@ -12,10 +12,7 @@ phases:
   build:
     commands:
       - node_modules/mocha/bin/mocha tests
-  post_build:
-    commands:
-      - tar -cvf notejam.tar *
 
 artifacts:
   files:
-    - notejam.tar
+    - '**/*'
