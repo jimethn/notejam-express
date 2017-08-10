@@ -1,0 +1,21 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - apt-get update -y
+      - apt-get install -y nodejs build-essential
+  pre_build:
+    commands:
+      - npm install
+      - node db.js
+  build:
+    commands:
+      - node_modules/mocha/bin/mocha tests
+  post_build:
+    commands:
+      - tar -cvf notejam.tar *
+
+artifacts:
+  files:
+    - notejam.tar
