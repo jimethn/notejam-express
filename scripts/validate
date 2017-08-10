@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pid=$(pgrep -f -u ubuntu 'node bin/www')
+test -n "$pid" && exit 0
+exit 1

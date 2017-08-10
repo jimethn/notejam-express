@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pid=$(pgrep -f -u ubuntu 'node bin/www')
+kill $pid
