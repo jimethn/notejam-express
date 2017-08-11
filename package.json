@@ -30,5 +30,6 @@
     "bcrypt": "*",
     "nodemailer": "*",
     "nodemailer-stub-transport": "*"
+    "hsts": "~2.1.0"
   }
 }
