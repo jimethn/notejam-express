@@ -20,6 +20,7 @@
     "express-validator": "~2.6.0",
     "passport": "0.2.1",
     "passport-local": "1.0.0",
+    "hsts": "~2.1.0",
     "mocha": "1.*.*",
     "supertest": "0.*.*",
     "superagent": "*",
@@ -30,6 +31,5 @@
     "bcrypt": "*",
     "nodemailer": "*",
     "nodemailer-stub-transport": "*"
-    "hsts": "~2.1.0"
   }
 }
