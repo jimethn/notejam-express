@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /home/ubuntu
-nohup bin/www &
+nohup node bin/www &
