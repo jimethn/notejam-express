@@ -40,7 +40,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // DB configuration
 var sqlite3 = require('sqlite3').verbose();
-var db = new sqlite3.Database(settings.db);
+if(settings.env == "dev") {
+  var db = require('mysql').createConnection(settings.dsn);
+else
+  var db = new sqlite3.Database(settings.db);
 
 orm.settings.set("instance.returnAllErrors", true);
 app.use(orm.express(settings.dsn, {
