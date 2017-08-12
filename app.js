@@ -11,6 +11,7 @@ var orm = require('orm');
 var expressValidator = require('express-validator');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+var mysql = require('mysql');
 
 var users = require('./routes/users');
 var pads = require('./routes/pads');
