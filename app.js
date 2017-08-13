@@ -40,7 +40,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // DB configuration
 var sqlite3 = require('sqlite3').verbose();
-if(settings.env == "dev") {
+if(settings.env == "dev")
   var db = require('mysql').createConnection(settings.dsn);
 else
   var db = new sqlite3.Database(settings.db);
