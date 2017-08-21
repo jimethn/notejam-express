@@ -2,7 +2,7 @@ var settings = {
   development: {
     env: "dev",
     db: "notejam.db",
-    dsn: "mysql://notejamuser:notejampw@notejam-dbinstance.ceiipxppnqt3.us-east-2.rds.amazonaws.com/notejam"
+    dsn: require('./cloud-settings.js').dsn
   },
   test: {
     env: "test",
