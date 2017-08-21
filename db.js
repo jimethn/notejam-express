@@ -46,7 +46,7 @@ var functions = {
       createNotes: function(callback) {
         db.run("CREATE TABLE IF NOT EXISTS notes (" +
             "id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL," +
-            "pad_id INTEGER REFERENCES pads(id)," +
+            "pad_id INTEGER NULL REFERENCES pads(id)," +
             "user_id INTEGER NOT NULL REFERENCES users(id)," +
             "name VARCHAR(100) NOT NULL," +
             "text text NOT NULL," +
