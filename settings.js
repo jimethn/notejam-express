@@ -2,6 +2,7 @@ try {
   var cs = require('./cloud-settings.js');
 } catch (e) {
   console.log("cloud-settings.js not found");
+  var cs = { dsn: "sqlite://notejam.db" };
 }
 
 var settings = {
