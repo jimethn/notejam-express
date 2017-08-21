@@ -1,4 +1,5 @@
 #!/bin/bash
 
 cd /home/ubuntu
+node db.js
 DEBUG=* node bin/www &> notejam.log < /dev/null &
