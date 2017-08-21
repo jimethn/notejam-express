@@ -1,8 +1,14 @@
+try {
+  var cs = require('./cloud-settings.js');
+} catch (e) {
+  console.log("cloud-settings.js not found");
+}
+
 var settings = {
   development: {
     env: "dev",
     db: "notejam.db",
-    dsn: require('./cloud-settings.js').dsn
+    dsn: cs.dsn
   },
   test: {
     env: "test",
